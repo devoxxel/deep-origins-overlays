@@ -1,0 +1,23 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/dirt_path_farmland/default/template_all",
+  "textures": {
+    "all": "minecraft:block/overlay/red_sand"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_block",
+          "block": "red_sand",
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "targets": [
+    {
+      "block": "farmland",
+      "properties": {
+        "moisture": ["0", "1", "2", "3", "4", "5", "6"]
+      }
+    }
+  ],
+  "append": [
+    "minecraft:block/overlay/dirt_path_farmland/farmland_moist_top"
+  ],
+  "ignore_missing_targets": true
+}

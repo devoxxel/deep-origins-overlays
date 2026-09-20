@@ -1,0 +1,12 @@
+{
+  "targets": [
+    "sculk"
+  ],
+  "append": [
+    "minecraft:block/overlay/moss_block",
+    "minecraft:block/overlay/pale_moss_block",
+    "minecraft:block/overlay/snow_block",
+    "minecraft:block/overlay/powder_snow"
+  ],
+  "ignore_missing_targets": true
+}

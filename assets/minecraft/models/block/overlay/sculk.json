@@ -1,0 +1,23 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_all",
+  "textures": {
+    "all": "minecraft:block/overlay/sculk"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_block",
+          "block": "sculk",
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}

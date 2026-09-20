@@ -1,0 +1,23 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_side",
+  "textures": {
+    "side": "minecraft:block/overlay/crimson_nylium_side"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_block",
+          "block": "crimson_nylium",
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/dirt_path_farmland/extended/template_all",
+  "textures": {
+    "all": "minecraft:block/overlay/snow_block"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "or",
+          "predicates": [
+            {
+              "type": "match_block",
+              "blocks": [
+                "snow_block",
+                "powder_snow"
+              ],
+              "ignore_missing": true
+            },
+            {
+              "type": "match_state",
+              "block": "snow",
+              "properties": {
+                "layers": "8"
+              },
+              "ignore_missing": true
+            }
+          ]
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,11 @@
+{
+  "animation": {
+    "frametime": 20,
+    "interpolate": true
+  },
+  "fusion": {
+    "type": "connecting",
+    "layout": "overlay",
+    "render_type": "translucent"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_all",
+  "textures": {
+    "all": "minecraft:block/overlay/dead_fire_coral_block"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_block",
+          "block": "dead_fire_coral_block",
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "block/overlay/templates/template_side",
+  "textures": {
+    "side": "block/overlay/snow_block"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "or",
+          "predicates": [
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "is_direction",
+                  "directions": [
+                    "top"
+                  ]
+                },
+                {
+                  "type": "match_block",
+                  "blocks": [
+                    "powder_snow",
+                    "snow",
+                    "snow_block"
+                  ],
+                  "ignore_missing": true
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "is_direction",
+                  "directions": [
+                    "left",
+                    "right"
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_state",
+                      "block": "snow",
+                      "properties": {
+                        "layers": [
+                          "6",
+                          "7",
+                          "8"
+                        ]
+                      },
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "powder_snow",
+                        "snow_block"
+                      ],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "match_block",
+              "blocks": [
+                "powder_snow",
+                "snow_block"
+              ],
+              "ignore_missing": true
+            }
+          ]
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}
+

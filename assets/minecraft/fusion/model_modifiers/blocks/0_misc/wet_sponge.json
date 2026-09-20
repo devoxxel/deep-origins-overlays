@@ -1,0 +1,9 @@
+{
+  "targets": [
+    "sponge"
+  ],
+  "append": [
+    "minecraft:block/overlay/wet_sponge"
+  ],
+  "ignore_missing_targets": true
+}

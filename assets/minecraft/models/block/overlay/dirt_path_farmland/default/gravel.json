@@ -1,0 +1,26 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/dirt_path_farmland/default/template_all",
+  "textures": {
+    "all": "minecraft:block/overlay/gravel"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_block",
+          "blocks": [
+            "gravel",
+            "suspicious_gravel"
+          ],
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}

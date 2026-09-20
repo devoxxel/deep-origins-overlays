@@ -2,13 +2,13 @@
     id: "deepOriginsOverlays",
     version: 9,
     capabilities: ["FileFilter", "DirFilter"],
-    conf: {
-        dirtPathAndFarmlandOverlays: true,
-        allowBlockOverlaysOnThemselves: false,
-        connectedSandstone: false,
-        mossAndSnowOverhangs: {
-            mossCarpetOverhangs: true,
-            snowLayerOverhangs: true
-        }
+    conf: {  
+        dirtPathAndFarmlandOverlays: {
+            type: "enum",
+            default: "default",
+            values: ["disabled", "default", "extended"]
+        },
+        snowLayerOverlays: true,
+        connectedSandstone: false
     }
 }

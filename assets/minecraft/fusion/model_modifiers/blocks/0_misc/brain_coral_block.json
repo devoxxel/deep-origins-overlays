@@ -1,0 +1,11 @@
+{
+  "targets": [
+    "brain_coral_block"
+  ],
+  "append": [
+    "minecraft:block/overlay/bubble_coral_block",
+    "minecraft:block/overlay/fire_coral_block",
+    "minecraft:block/overlay/horn_coral_block"
+  ],
+  "ignore_missing_targets": true
+}

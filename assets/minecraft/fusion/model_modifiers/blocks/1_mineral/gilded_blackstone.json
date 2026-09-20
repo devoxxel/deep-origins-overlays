@@ -1,0 +1,13 @@
+{
+  "targets": [
+    "gilded_blackstone"
+  ],
+  "append": [
+    "minecraft:block/overlay/basalt_axis_y",
+    "minecraft:block/overlay/basalt_axis_x",
+    "minecraft:block/overlay/basalt_axis_z",
+    "minecraft:block/overlay/netherrack",
+    "minecraft:block/overlay/magma_block"
+  ],
+  "ignore_missing_targets": true
+}

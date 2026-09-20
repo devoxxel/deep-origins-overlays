@@ -1,0 +1,14 @@
+{
+  "targets": [
+    "magenta_concrete_powder"
+  ],
+  "append": [
+    "minecraft:block/overlay/pink_concrete_powder",
+    "minecraft:block/overlay/sculk",
+    "minecraft:block/overlay/moss_block",
+    "minecraft:block/overlay/pale_moss_block",
+    "minecraft:block/overlay/snow_block",
+    "minecraft:block/overlay/powder_snow"
+  ],
+  "ignore_missing_targets": true
+}

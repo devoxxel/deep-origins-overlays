@@ -1,0 +1,152 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "minecraft:block/red_sandstone_bottom",
+    "side": "minecraft:block/connect/red_sandstone",
+    "top": "minecraft:block/red_sandstone_top"
+  },
+  "connections": {
+    "type": "or",
+    "predicates": [
+      {
+        "type": "match_block",
+        "blocks": [
+          "ancient_debris",
+          "andesite",
+          "amethyst_block",
+          "basalt",
+          "bedrock",
+          "blackstone",
+          "blue_ice",
+          "bone_block",
+          "budding_amethyst",
+          "calcite",
+          "cinnabar",
+          "coal_ore",
+          "copper_ore",
+          "crimson_nylium",
+          "crying_obsidian",
+          "deepslate",
+          "deepslate_coal_ore",
+          "deepslate_copper_ore",
+          "deepslate_diamond_ore",
+          "deepslate_emerald_ore",
+          "deepslate_gold_ore",
+          "deepslate_iron_ore",
+          "deepslate_lapis_ore",
+          "deepslate_redstone_ore",
+          "diamond_ore",
+          "diorite",
+          "dripstone_block",
+          "emerald_ore",
+          "gilded_blackstone",
+          "glowstone",
+          "gold_ore",
+          "granite",
+          "ice",
+          "infested_deepslate",
+          "infested_stone",
+          "iron_ore",
+          "lapis_ore",
+          "magma_block",
+          "nether_gold_ore",
+          "nether_quartz_ore",
+          "netherrack",
+          "obsidian",
+          "packed_ice",
+          "potent_sulfur",
+          "raw_copper_block",
+          "raw_gold_block",
+          "raw_iron_block",
+          "red_sandstone",
+          "redstone_ore",
+          "sandstone",
+          "smooth_basalt",
+          "stone",
+          "sulfur",
+          "tuff",
+          "warped_nylium"
+        ],
+        "ignore_missing": true
+      },
+      {
+        "type": "match_state",
+        "block": "minecraft:red_sandstone_slab",
+        "properties": {
+          "type": "double"
+        },
+        "ignore_missing": true
+      },
+      {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "is_direction",
+            "directions": [
+              "top_left",
+              "top",
+              "top_right"
+            ]
+          },
+          {
+            "type": "or",
+            "predicates": [
+              {
+                "type": "match_state",
+                "block": "minecraft:red_sandstone_slab",
+                "properties": {
+                  "type": "bottom"
+                },
+                "ignore_missing": true
+              },
+              {
+                "type": "match_state",
+                "block": "minecraft:red_sandstone_stairs",
+                "properties": {
+                  "half": "bottom"
+                },
+                "ignore_missing": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "is_direction",
+            "directions": [
+              "bottom_left",
+              "bottom",
+              "bottom_right"
+            ]
+          },
+          {
+            "type": "or",
+            "predicates": [
+              {
+                "type": "match_state",
+                "block": "minecraft:red_sandstone_slab",
+                "properties": {
+                  "type": "top"
+                },
+                "ignore_missing": true
+              },
+              {
+                "type": "match_state",
+                "block": "minecraft:red_sandstone_stairs",
+                "properties": {
+                  "half": "top"
+                },
+                "ignore_missing": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

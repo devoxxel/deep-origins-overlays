@@ -1,9 +1,0 @@
-{
-  "targets": [
-    "moss_block"
-  ],
-  "append": [
-    "minecraft:block/overlay/pale_moss_block",
-    "minecraft:block/overlay/snow_block_powder_snow"
-  ]
-}

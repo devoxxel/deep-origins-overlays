@@ -1,0 +1,4 @@
+{
+    condition: "dirtPathAndFarmlandOverlays[1]",
+    fallback: "assets/minecraft/rpo/fusion/model_modifiers/blocks/dirt_path_farmland/extended.json"
+}

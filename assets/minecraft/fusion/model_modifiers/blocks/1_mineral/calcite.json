@@ -1,0 +1,17 @@
+{
+  "targets": [
+    "calcite"
+  ],
+  "append": [
+    "minecraft:block/overlay/red_sandstone",
+    "minecraft:block/overlay/sandstone",
+    "minecraft:block/overlay/blackstone",
+    "minecraft:block/overlay/gilded_blackstone",
+    "minecraft:block/overlay/basalt_axis_y",
+    "minecraft:block/overlay/basalt_axis_x",
+    "minecraft:block/overlay/basalt_axis_z",
+    "minecraft:block/overlay/netherrack",
+    "minecraft:block/overlay/magma_block"
+  ],
+  "ignore_missing_targets": true
+}

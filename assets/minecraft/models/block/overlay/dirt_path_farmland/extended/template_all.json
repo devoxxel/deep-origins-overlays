@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/overlay/dirt_path_farmland/extended/template_top_side_bottom",
+  "textures": {
+    "top": "#all",
+    "side": "#all",
+    "bottom": "#all"
+  }
+}

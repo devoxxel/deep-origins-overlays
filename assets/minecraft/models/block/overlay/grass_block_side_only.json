@@ -1,0 +1,27 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_side",
+  "textures": {
+    "side": "minecraft:block/overlay/grass_block_side"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_state",
+          "block": "grass_block",
+          "properties": {
+            "snowy": "false"
+          },
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,4 +1,0 @@
-{
-    condition: "connectedSandstone",
-    fallback: "assets/minecraft/textures/block/overlay/red_sandstone_side.png"
-}

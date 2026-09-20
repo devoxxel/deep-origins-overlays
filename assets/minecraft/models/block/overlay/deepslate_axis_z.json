@@ -1,6 +1,7 @@
 {
   "loader": "fusion:model",
   "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_axis_z",
   "textures": {
     "top": "minecraft:block/overlay/deepslate_top",
     "side_up": "minecraft:block/overlay/deepslate_side_up",
@@ -12,42 +13,20 @@
       "type": "and",
       "predicates": [
         {
-          "type": "or",
-          "predicates": [
-            {
-              "type": "match_state",
-              "block": "deepslate",
-              "properties": {
-                "axis": "z"
-              }
-            },
-            {
-              "type": "match_state",
-              "block": "infested_deepslate",
-              "properties": {
-                "axis": "z"
-              }
-            }
-          ]
+          "type": "match_state",
+          "blocks": [
+            "deepslate",
+            "infested_deepslate"
+          ],
+          "properties": {
+            "axis": "z"
+          },
+          "ignore_missing": true
         },
         {
           "type": "is_face_visible"
         }
       ]
-    }
-  ],
-  "elements": [
-    {
-      "from": [ 0, 0, 0 ],
-      "to": [ 16, 16, 16 ],
-      "faces": {
-        "up": { "texture": "#side_up", "cullface": "up" },
-        "down": { "texture": "#side_up", "cullface": "down" },
-        "north": { "texture": "#top", "cullface": "north" },
-        "south": { "texture": "#top", "cullface": "south" },
-        "east": { "texture": "#side_left", "cullface": "east" },
-        "west": { "texture": "#side_right", "cullface": "west" }
-      }
     }
   ]
 }

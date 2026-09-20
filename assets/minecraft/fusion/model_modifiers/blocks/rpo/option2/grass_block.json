@@ -1,8 +1,0 @@
-{
-  "targets": [
-    "grass_block"
-  ],
-  "append": [
-    "minecraft:block/overlay/grass_block_on_itself"
-  ]
-}

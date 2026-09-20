@@ -1,6 +1,7 @@
 {
   "loader": "fusion:model",
   "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_all",
   "textures": {
     "all": "minecraft:block/overlay/deepslate_side_up"
   },
@@ -9,60 +10,23 @@
       "type": "and",
       "predicates": [
         {
-          "type": "or",
-          "predicates": [
-            {
-                "type": "match_block",
-                "block": "deepslate_coal_ore"
-            },
-            {
-                "type": "match_block",
-                "block": "deepslate_copper_ore"
-            },
-            {
-                "type": "match_block",
-                "block": "deepslate_diamond_ore"
-            },
-            {
-                "type": "match_block",
-                "block": "deepslate_emerald_ore"
-            },
-            {
-                "type": "match_block",
-                "block": "deepslate_gold_ore"
-            },
-            {
-                "type": "match_block",
-                "block": "deepslate_iron_ore"
-            },
-            {
-                "type": "match_block",
-                "block": "deepslate_lapis_ore"
-            },
-            {
-                "type": "match_block",
-                "block": "deepslate_redstone_ore"
-            }
-          ]
+          "type": "match_block",
+          "blocks": [
+            "deepslate_coal_ore",
+            "deepslate_copper_ore",
+            "deepslate_diamond_ore",
+            "deepslate_emerald_ore",
+            "deepslate_gold_ore",
+            "deepslate_iron_ore",
+            "deepslate_lapis_ore",
+            "deepslate_redstone_ore"
+          ],
+          "ignore_missing": true
         },
         {
           "type": "is_face_visible"
         }
       ]
-    }
-  ],
-  "elements": [
-    {
-      "from": [ 0, 0, 0 ],
-      "to": [ 16, 16, 16 ],
-      "faces": {
-        "up": { "texture": "#all", "cullface": "up" },
-        "down": { "texture": "#all", "cullface": "down" },
-        "north": { "texture": "#all", "cullface": "north" },
-        "south": { "texture": "#all", "cullface": "south" },
-        "east": { "texture": "#all", "cullface": "east" },
-        "west": { "texture": "#all", "cullface": "west" }
-      }
     }
   ]
 }

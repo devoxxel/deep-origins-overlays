@@ -1,0 +1,82 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "textures": {
+    "all": "minecraft:block/overlay/dirt"
+  },
+  "connections": {
+    "top": [
+      {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "match_block",
+            "block": "dirt",
+            "ignore_missing": true
+          },
+          {
+            "type": "is_face_visible"
+          }
+        ]
+      }
+    ],
+    "bottom": [
+      {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "match_block",
+            "blocks": [
+              "dirt",
+              "grass_block",
+              "mycelium",
+              "podzol"
+            ],
+            "ignore_missing": true
+          },
+          {
+            "type": "is_face_visible"
+          }
+        ]
+      }
+    ]
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#all",
+          "connections": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#all",
+          "connections": "#bottom",
+          "cullface": "down"
+        }
+      }
+    }
+  ]
+}

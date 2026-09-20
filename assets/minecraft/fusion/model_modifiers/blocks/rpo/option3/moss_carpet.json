@@ -1,8 +1,0 @@
-{
-    "targets": [
-        "moss_carpet"
-    ],
-    "append": [
-        "block/connect/moss_carpet"
-    ]
-}

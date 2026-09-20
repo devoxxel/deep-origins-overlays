@@ -1,6 +1,7 @@
 {
   "loader": "fusion:model",
   "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_axis_x",
   "textures": {
     "top": "minecraft:block/overlay/basalt_top",
     "side_right": "minecraft:block/overlay/basalt_side_right",
@@ -15,26 +16,13 @@
           "block": "basalt",
           "properties": {
             "axis": "x"
-          }
+          },
+          "ignore_missing": true
         },
         {
           "type": "is_face_visible"
         }
       ]
-    }
-  ],
-  "elements": [
-    {
-      "from": [ 0, 0, 0 ],
-      "to": [ 16, 16, 16 ],
-      "faces": {
-        "up": { "texture": "#side_right", "cullface": "up" },
-        "down": { "texture": "#side_right", "cullface": "down" },
-        "north": { "texture": "#side_right", "cullface": "north" },
-        "south": { "texture": "#side_left", "cullface": "south" },
-        "east": { "texture": "#top", "cullface": "east" },
-        "west": { "texture": "#top", "cullface": "west" }
-      }
     }
   ]
 }

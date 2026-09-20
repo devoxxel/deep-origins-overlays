@@ -1,8 +1,0 @@
-{
-    "targets": [
-        "snow"
-    ],
-    "append": [
-        "block/connect/snow"
-    ]
-}

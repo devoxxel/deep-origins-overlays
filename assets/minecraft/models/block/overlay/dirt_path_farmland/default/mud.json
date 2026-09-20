@@ -1,0 +1,26 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/dirt_path_farmland/default/template_all",
+  "textures": {
+    "all": "minecraft:block/overlay/mud"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_block",
+          "blocks": [
+            "mud",
+            "muddy_mangrove_roots"
+          ],
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}

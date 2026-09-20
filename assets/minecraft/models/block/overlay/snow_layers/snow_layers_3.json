@@ -1,0 +1,36 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_side",
+  "textures": {
+    "side": "minecraft:block/overlay/snow_layers_3"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_state",
+          "block": "snow",
+          "properties": {
+            "layers": "3"
+          },
+          "ignore_missing": true
+        },
+        {
+          "type": "is_direction",
+          "directions": [
+            "top",
+            "bottom",
+            "left",
+            "right"
+          ]
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}
+

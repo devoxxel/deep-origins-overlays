@@ -1,0 +1,24 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/dirt_path_farmland/template_side_bottom",
+  "textures": {
+    "side": "minecraft:block/overlay/farmland_side",
+    "bottom": "minecraft:block/overlay/dirt"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_block",
+          "block": "farmland",
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}

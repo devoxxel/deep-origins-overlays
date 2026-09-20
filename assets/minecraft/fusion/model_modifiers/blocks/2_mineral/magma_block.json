@@ -1,9 +1,0 @@
-{
-  "targets": [
-      "magma_block"
-  ],
-  "append": [
-    "minecraft:block/overlay/netherrack",
-    "minecraft:block/overlay/nylium_base"
-  ]
-}

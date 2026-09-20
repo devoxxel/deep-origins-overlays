@@ -1,0 +1,10 @@
+{
+  "targets": [
+    "dirt_path"
+  ],
+  "append": [
+    "minecraft:block/overlay/dirt_path_farmland/farmland_full",
+    "minecraft:block/overlay/dirt_path_farmland/farmland_moist_full"
+  ],
+  "ignore_missing_targets": true
+}

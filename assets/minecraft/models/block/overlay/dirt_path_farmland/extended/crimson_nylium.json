@@ -1,0 +1,24 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/overlay/dirt_path_farmland/extended/template_top_side",
+  "textures": {
+    "top": "minecraft:block/overlay/crimson_nylium_top",
+    "side": "minecraft:block/overlay/crimson_nylium_side"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_block",
+          "block": "crimson_nylium",
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ]
+}

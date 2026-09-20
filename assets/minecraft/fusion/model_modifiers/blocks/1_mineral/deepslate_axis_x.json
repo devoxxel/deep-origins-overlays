@@ -1,0 +1,41 @@
+{
+  "targets": [
+      {
+         "block": "deepslate",
+         "properties": {
+            "axis": "x"
+         }
+      },
+      {
+         "block": "infested_deepslate",
+         "properties": {
+            "axis": "x"
+         }
+      }
+  ],
+  "append": [
+    "minecraft:block/overlay/deepslate_axis_z",
+    "minecraft:block/overlay/deepslate_ore",
+    "minecraft:block/overlay/stone",
+    "minecraft:block/overlay/granite",
+    "minecraft:block/overlay/diorite",
+    "minecraft:block/overlay/andesite",
+    "minecraft:block/overlay/dripstone_block",
+    "minecraft:block/overlay/tuff",
+    "minecraft:block/overlay/smooth_basalt",
+    "minecraft:block/overlay/cinnabar",
+    "minecraft:block/overlay/sulfur",
+    "minecraft:block/overlay/potent_sulfur",
+    "minecraft:block/overlay/calcite",
+    "minecraft:block/overlay/red_sandstone",
+    "minecraft:block/overlay/sandstone",
+    "minecraft:block/overlay/blackstone",
+    "minecraft:block/overlay/gilded_blackstone",
+    "minecraft:block/overlay/basalt_axis_y",
+    "minecraft:block/overlay/basalt_axis_x",
+    "minecraft:block/overlay/basalt_axis_z",
+    "minecraft:block/overlay/netherrack",
+    "minecraft:block/overlay/magma_block"
+  ],
+  "ignore_missing_targets": true
+}

@@ -1,8 +1,0 @@
-{
-  "targets": [
-    "mycelium"
-  ],
-  "append": [
-    "minecraft:block/overlay/mycelium_on_itself"
-  ]
-}

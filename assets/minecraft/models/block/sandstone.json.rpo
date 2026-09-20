@@ -1,3 +1,4 @@
 {
-    condition: "connectedSandstone"
+  condition: "!connectedSandstone",
+  fallback: "assets/minecraft/rpo/models/block/sandstone.json"
 }

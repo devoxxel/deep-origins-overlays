@@ -1,8 +1,0 @@
-{
-  "targets": [
-    "warped_nylium"
-  ],
-  "append": [
-    "minecraft:block/overlay/warped_nylium_on_itself"
-  ]
-}

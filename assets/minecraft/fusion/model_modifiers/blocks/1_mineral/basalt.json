@@ -1,0 +1,10 @@
+{
+  "targets": [
+    "basalt"
+  ],
+  "append": [
+    "minecraft:block/overlay/netherrack",
+    "minecraft:block/overlay/magma_block"
+  ],
+  "ignore_missing_targets": true
+}

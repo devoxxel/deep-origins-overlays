@@ -1,8 +1,0 @@
-{
-  "targets": [
-    "crimson_nylium"
-  ],
-  "append": [
-    "minecraft:block/overlay/crimson_nylium_on_itself"
-  ]
-}

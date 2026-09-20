@@ -1,0 +1,51 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "textures": {
+    "top": "minecraft:block/overlay/farmland_moist_top"
+  },
+  "connections": [
+    {
+      "type": "and",
+      "predicates": [
+        {
+          "type": "match_state",
+          "block": "farmland",
+          "properties": {
+            "moisture": "7"
+          },
+          "ignore_missing": true
+        },
+        {
+          "type": "is_face_visible"
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        15,
+        16
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#top",
+          "cullface": "up"
+        }
+      }
+    }
+  ]
+}

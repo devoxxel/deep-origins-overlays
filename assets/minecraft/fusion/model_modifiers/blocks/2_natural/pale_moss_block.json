@@ -1,0 +1,10 @@
+{
+  "targets": [
+    "pale_moss_block"
+  ],
+  "append": [
+    "minecraft:block/overlay/snow_block",
+    "minecraft:block/overlay/powder_snow"
+  ],
+  "ignore_missing_targets": true
+}

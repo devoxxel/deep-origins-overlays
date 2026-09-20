@@ -1,9 +1,11 @@
 {
   "loader": "fusion:model",
   "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_top_side_bottom",
   "textures": {
     "top": "minecraft:block/overlay/blackstone_top",
-    "side": "minecraft:block/overlay/blackstone_side"
+    "side": "minecraft:block/overlay/blackstone_side",
+    "bottom": "#top"
   },
   "connections": [
     {
@@ -11,26 +13,13 @@
       "predicates": [
         {
           "type": "match_block",
-          "block": "blackstone"
+          "block": "blackstone",
+          "ignore_missing": true
         },
         {
           "type": "is_face_visible"
         }
       ]
-    }
-  ],
-  "elements": [
-    {
-      "from": [ 0, 0, 0 ],
-      "to": [ 16, 16, 16 ],
-      "faces": {
-        "up": { "texture": "#top", "cullface": "up" },
-        "down": { "texture": "#top", "cullface": "down" },
-        "north": { "texture": "#side", "cullface": "north" },
-        "south": { "texture": "#side", "cullface": "south" },
-        "east": { "texture": "#side", "cullface": "east" },
-        "west": { "texture": "#side", "cullface": "west" }
-      }
     }
   ]
 }

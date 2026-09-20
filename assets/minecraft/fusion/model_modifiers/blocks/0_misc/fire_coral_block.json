@@ -1,0 +1,9 @@
+{
+  "targets": [
+    "fire_coral_block"
+  ],
+  "append": [
+    "minecraft:block/overlay/horn_coral_block"
+  ],
+  "ignore_missing_targets": true
+}

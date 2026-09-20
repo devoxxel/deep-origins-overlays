@@ -1,14 +1,12 @@
 {
     "rpo.deepOriginsOverlays": "Deep Origins Overlays §6Reworked §4[BETA]§r",
     "rpo.deepOriginsOverlays.dirtPathAndFarmlandOverlays": "Dirt Path and Farmland Overlays",
-    "rpo.deepOriginsOverlays.dirtPathAndFarmlandOverlays.tooltip": "Allows blocks to overlay on dirt paths and farmland. §o(Default : §2True§r§o)",
-    "rpo.deepOriginsOverlays.allowBlockOverlaysOnThemselves": "Allow block overlays on themselves",
-    "rpo.deepOriginsOverlays.allowBlockOverlaysOnThemselves.tooltip": "Allows blocks to overlay on themselves. §l§c(Requires Sodium)",
+    "rpo.deepOriginsOverlays.dirtPathAndFarmlandOverlays.disabled": "§cDisabled",
+    "rpo.deepOriginsOverlays.dirtPathAndFarmlandOverlays.default": "§aDefault",
+    "rpo.deepOriginsOverlays.dirtPathAndFarmlandOverlays.extended": "§6Extended",
+    "rpo.deepOriginsOverlays.dirtPathAndFarmlandOverlays.tooltip": "Enables Dirt Path and Farmland overlays.\n§cDisabled§r disables the overlays completely.\n§aDefault§r only shows overlays for top and bottom faces.\n§6Extended§r shows overlays for all faces.",
+    "rpo.deepOriginsOverlays.snowLayerOverlays": "Snow Layer Overlays",
+    "rpo.deepOriginsOverlays.snowLayerOverlays.tooltip": "Enables snow layer overlays. §o(Default : §2True§r§o)",
     "rpo.deepOriginsOverlays.connectedSandstone": "Connected Sandstone",
-    "rpo.deepOriginsOverlays.connectedSandstone.tooltip": "Allows sandstone and red sandstone to connect to other blocks. §o(Default : §4False§r§o)",
-    "rpo.deepOriginsOverlays.mossAndSnowOverhangs": "Moss Carpet and Snow Layer Overhangs",
-    "rpo.deepOriginsOverlays.mossAndSnowOverhangs.mossCarpetOverhangs": "Moss Carpet Overhangs",
-    "rpo.deepOriginsOverlays.mossAndSnowOverhangs.mossCarpetOverhangs.tooltip": "Allows moss carpets to overhang on blocks below them. §o(Default : §2True§r§o)",
-    "rpo.deepOriginsOverlays.mossAndSnowOverhangs.snowLayerOverhangs": "Snow Layer Overhangs",
-    "rpo.deepOriginsOverlays.mossAndSnowOverhangs.snowLayerOverhangs.tooltip": "Allows snow layers to overhang on blocks below them. §o(Default : §2True§r§o)"
+    "rpo.deepOriginsOverlays.connectedSandstone.tooltip": "Allows sandstone and red sandstone to connect to other blocks. §o(Default : §4False§r§o)"
 }

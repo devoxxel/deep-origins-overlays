@@ -1,0 +1,31 @@
+{
+  "targets": [
+    "soul_sand"
+  ],
+  "append": [
+    "minecraft:block/overlay/red_sand",
+    "minecraft:block/overlay/sand",
+    "minecraft:block/overlay/white_concrete_powder",
+    "minecraft:block/overlay/light_gray_concrete_powder",
+    "minecraft:block/overlay/gray_concrete_powder",
+    "minecraft:block/overlay/black_concrete_powder",
+    "minecraft:block/overlay/brown_concrete_powder",
+    "minecraft:block/overlay/red_concrete_powder",
+    "minecraft:block/overlay/orange_concrete_powder",
+    "minecraft:block/overlay/yellow_concrete_powder",
+    "minecraft:block/overlay/lime_concrete_powder",
+    "minecraft:block/overlay/green_concrete_powder",
+    "minecraft:block/overlay/cyan_concrete_powder",
+    "minecraft:block/overlay/light_blue_concrete_powder",
+    "minecraft:block/overlay/blue_concrete_powder",
+    "minecraft:block/overlay/purple_concrete_powder",
+    "minecraft:block/overlay/magenta_concrete_powder",
+    "minecraft:block/overlay/pink_concrete_powder",
+    "minecraft:block/overlay/sculk",
+    "minecraft:block/overlay/moss_block",
+    "minecraft:block/overlay/pale_moss_block",
+    "minecraft:block/overlay/snow_block",
+    "minecraft:block/overlay/powder_snow"
+  ],
+  "ignore_missing_targets": true
+}

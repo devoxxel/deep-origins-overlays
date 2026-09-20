@@ -1,9 +1,10 @@
 {
   "loader": "fusion:model",
   "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_sandstone",
   "textures": {
     "top": "minecraft:block/overlay/red_sandstone_top",
-    "side": "minecraft:block/overlay/red_sandstone_side_connected",
+    "side": "minecraft:block/overlay/red_sandstone_side",
     "bottom": "minecraft:block/overlay/red_sandstone_bottom"
   },
   "connections": [
@@ -12,26 +13,13 @@
       "predicates": [
         {
           "type": "match_block",
-          "block": "red_sandstone"
+          "block": "red_sandstone",
+          "ignore_missing": true
         },
         {
           "type": "is_face_visible"
         }
       ]
-    }
-  ],
-  "elements": [
-    {
-      "from": [ 0, 0, 0 ],
-      "to": [ 16, 16, 16 ],
-      "faces": {
-        "up": { "texture": "#top", "cullface": "up" },
-        "down": { "texture": "#bottom", "cullface": "down" },
-        "north": { "texture": "#side", "cullface": "north" },
-        "south": { "texture": "#side", "cullface": "south" },
-        "east": { "texture": "#side", "cullface": "east" },
-        "west": { "texture": "#side", "cullface": "west" }
-      }
     }
   ]
 }

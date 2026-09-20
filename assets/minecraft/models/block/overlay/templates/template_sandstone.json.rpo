@@ -1,0 +1,4 @@
+{
+    condition: "!connectedSandstone",
+    fallback: "assets/minecraft/rpo/models/block/overlay/templates/template_sandstone.json"
+}

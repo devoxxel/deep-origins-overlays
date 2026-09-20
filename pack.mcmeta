@@ -1,55 +1,15 @@
 {
   "pack": {
-    "description": "§9Requires Fusion §b1.3.2+\n§4[BETA] §8| §oBy Devoneox",
-    "pack_format": 88,
+    "description": "§4[BETA] §8| §6§oBy Devoneox §9Requires Fusion §b1.3.8+",
+    "pack_format": 97.1,
     "supported_formats": [
-      15,
-      88
+      7,
+      97.1
     ],
-    "min_format": 15,
-    "max_format": 88
-  },
-  "overlays": {
-    "entries": [
-      {
-        "directory": "1.21",
-        "formats": {
-          "min_inclusive": 34,
-          "max_inclusive": 88
-        },
-        "min_format": 34,
-        "max_format": 88
-      },
-      {
-        "directory": "1.21.4",
-        "formats": {
-          "min_inclusive": 46,
-          "max_inclusive": 88
-        },
-        "min_format": 46,
-        "max_format": 88
-      },
-      {
-        "directory": "1.21.5",
-        "formats": {
-          "min_inclusive": 55,
-          "max_inclusive": 88
-        },
-        "min_format": 55,
-        "max_format": 88
-      },
-      {
-        "directory": "26.2",
-        "formats": {
-          "min_inclusive": 88,
-          "max_inclusive": 88
-        },
-        "min_format": 88,
-        "max_format": 88
-      }
-    ]
+    "min_format": 7,
+    "max_format": 97.1
   },
   "fusion": {
-    "min_version": "1.3.2"
+    "min_version": "1.3.8"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "elements": [
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "up": { "texture": "#all", "cullface": "up", "connections": "#top"},
+        "down": { "texture": "#all", "cullface": "up", "connections": "#side_bottom"},
+        "north": { "texture": "#all", "cullface": "north", "connections": "#side_bottom"},
+        "south": { "texture": "#all", "cullface": "south", "connections": "#side_bottom"},
+        "east": { "texture": "#all", "cullface": "east", "connections": "#side_bottom"},
+        "west": { "texture": "#all", "cullface": "west", "connections": "#side_bottom"}
+      }
+    }
+  ]
+}

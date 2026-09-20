@@ -1,48 +1,50 @@
 {
   "loader": "fusion:model",
   "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_dirt_netherrack",
   "textures": {
     "all": "minecraft:block/overlay/netherrack"
   },
-  "connections": [
-    {
-      "type": "and",
-      "predicates": [
-        {
-          "type": "or",
-          "predicates": [
-            {
-                "type": "match_block",
-                "block": "nether_gold_ore"
-            },
-            {
-                "type": "match_block",
-                "block": "nether_quartz_ore"
-            },
-            {
-                "type": "match_block",
-                "block": "netherrack"
-            }
-          ]
-        },
-        {
-          "type": "is_face_visible"
-        }
-      ]
-    }
-  ],
-  "elements": [
-    {
-      "from": [ 0, 0, 0 ],
-      "to": [ 16, 16, 16 ],
-      "faces": {
-        "up": { "texture": "#all", "cullface": "up" },
-        "down": { "texture": "#all", "cullface": "down" },
-        "north": { "texture": "#all", "cullface": "north" },
-        "south": { "texture": "#all", "cullface": "south" },
-        "east": { "texture": "#all", "cullface": "east" },
-        "west": { "texture": "#all", "cullface": "west" }
+  "connections": {
+    "top": [
+      {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "match_block",
+            "blocks": [
+              "nether_gold_ore",
+              "nether_quartz_ore",
+              "netherrack"
+            ],
+            "ignore_missing": true
+          },
+          {
+            "type": "is_face_visible"
+          }
+        ]
       }
-    }
-  ]
+    ],
+    "side_bottom": [
+      {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "match_block",
+            "blocks": [
+              "crimson_nylium",
+              "nether_gold_ore",
+              "nether_quartz_ore",
+              "netherrack",
+              "warped_nylium"
+            ],
+            "ignore_missing": true
+          },
+          {
+            "type": "is_face_visible"
+          }
+        ]
+      }
+    ]
+  }
 }

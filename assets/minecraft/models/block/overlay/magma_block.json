@@ -1,8 +1,9 @@
 {
   "loader": "fusion:model",
   "type": "connecting",
+  "parent": "minecraft:block/overlay/templates/template_all",
   "textures": {
-    "top": "minecraft:block/overlay/magma_block"
+    "all": "minecraft:block/overlay/magma_block"
   },
   "connections": [
     {
@@ -10,21 +11,13 @@
       "predicates": [
         {
           "type": "match_block",
-          "block": "magma_block"
+          "block": "magma_block",
+          "ignore_missing": true
         },
         {
           "type": "is_face_visible"
         }
       ]
-    }
-  ],
-  "elements": [
-    {
-      "from": [ 0, 0, 0 ],
-      "to": [ 16, 16, 16 ],
-      "faces": {
-        "up": { "texture": "#top", "cullface": "up" }
-      }
     }
   ]
 }

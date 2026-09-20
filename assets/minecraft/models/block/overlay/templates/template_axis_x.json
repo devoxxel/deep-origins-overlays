@@ -1,0 +1,16 @@
+{
+  "elements": [
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "up": { "texture": "#side_right", "cullface": "up" },
+        "down": { "texture": "#side_right", "cullface": "down" },
+        "north": { "texture": "#side_right", "cullface": "north" },
+        "south": { "texture": "#side_left", "cullface": "south" },
+        "east": { "texture": "#top", "cullface": "east" },
+        "west": { "texture": "#top", "cullface": "west" }
+      }
+    }
+  ]
+}
