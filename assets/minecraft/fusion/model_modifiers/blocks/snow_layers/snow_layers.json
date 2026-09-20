@@ -908,7 +908,8 @@
     "yellow_terracotta",
     "yellow_wool"
         ],
-        "offset": [0, 1, 0]
+        "offset": [0, 1, 0],
+        "ignore_missing": true
       }
     },
     {
